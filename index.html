@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create Your own blog</title>
+<!-- Image to be displayed on the header -->
+    <link rel="icon" href="images/blog.png" type="image/x-icon">
+<!-- Linking CSS file derived from SCSS -->
+    <link rel="stylesheet" href="dist/blog.css">
+</head>
+
+<body>
+<!-- Header Nav Bar that is fixed -->
+    <nav class="fixed">
+        <div class="nav">
+        <!-- Title with CSS effects -->
+        <h1 class="titleHead">WEB DEV TOOLS</h1>
+        </div>
+    </nav>
+
+<!-- Main area of the page -->
+    <div class="main">
+        <!-- Space where Blogs are displayed -->
+        <!-- Loaded through JS -->
+        <div class="sec">
+            <section id="postsSection"></section>
+        </div>
+        <!-- Space to add new blog -->
+        <div id="blogBox">
+            <div class="new">
+                <div class="head">
+                    <h1>Add your own
+                        <br/>Blog here!</h1>
+                </div><br /><br />
+                <button id="createCard">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Structure of card where which is used to add new blog -->
+    <div id="card" class="card">
+        <div class="card-content">
+            <!-- to close the card-content -->
+            <!-- Handled by JS -->
+            <span class="close">&times;</span>
+            <!-- Title -->
+            <p1><b>Enter the title of your blog</b></p1><br/>
+            <input id="title" type="text" placeholder="Title"><br/><br/><br/>
+            <!-- Content -->
+            <p1><b>Content here</b></p1><br/>
+            <textarea id="content" placeholder="Content"></textarea><br/><br/><br/>
+            <!-- Author -->
+            <p1><b>Created by</b></p1><br/>
+            <input id="author" type="text" placeholder="Author"><br/><br/>
+            <!-- Handled by JS -->
+            <button id="submit">Add Blog</button>
+        </div>
+    </div>
+
+    <!-- Linking JS to HTML -->
+    <script src="js/blog.js"></script>
+</body>
+
+</html>
