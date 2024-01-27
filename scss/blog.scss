@@ -1,0 +1,256 @@
+// Sticky box to add new blog
+#blogBox {
+    margin-bottom: $margin-bottom;
+    margin-right: $margin-right;
+    position: sticky;
+    margin-right: 81px;
+
+    input,
+    textarea {
+        @include input-textarea;
+    }
+}
+
+// Properties of added blogs when transitions to expand
+.post {
+    @include post;
+
+    &-expanded {
+        max-height: 2000px; 
+        opacity: 1;
+    }
+}
+
+// Color to all the h2 tags under the class post
+.post h2{
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.post:hover{
+    background-color: #757e82;
+}
+// Dimensions of the fields
+#title,
+#author {
+    height: 25px;
+    background: #b1b1b1;
+}
+
+#content {
+    width: 593px;
+    height: 130px;
+    background: #b1b1b1;
+    outline: none;
+}
+
+#title {
+    width: 342px;
+}
+
+// Submit button
+#submit {
+    width: 91px;
+    height: 29px;
+    color: $color-white;
+    border-radius: 8px;
+    background-color: $color-purple;
+}
+
+#submit:hover{
+    background-color: #3e5959;
+    }
+
+// title bar
+.head {
+    color: $color-black;
+    padding: 1px 15px 1px 10px;
+    border-radius: 25px;
+}
+
+.main {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 73px;
+    margin-left: 78px;
+}
+
+// New card opens to create blog
+.new {
+    padding: 76px 27px 76px 36px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 104px;
+    background: $background;
+    border: $border;
+    border-radius: 30px;
+}
+
+.sec {
+    width: 1000px;
+}
+
+.card {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.card-content {
+    // 928f8f
+    background-color: #8b8a8a; 
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    // width: 80%;
+    // height: 60%;
+    width: 50%;
+    height: 57%;
+    border-radius: 7px;
+    position: fixed;
+    top: -63px;
+    left: 17%;
+}
+
+// To close the card
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+// Creation of card
+#createCard {
+    margin-left: 55px;
+    background-color: $color-purple;
+    color: $color-white;
+    border-radius: 6px;
+    width: 83px;
+    height: 33px;
+    font-size: 15px;
+    font: Arial Bold;
+}
+
+#createCard:hover{
+background-color: #3e5959;
+}
+
+h1 {
+   font: sans-serif;
+}
+
+body {
+    margin-left: 54px;
+    scroll-behavior: smooth;
+}
+
+// Style for common body of the page with background image
+.fixed {
+    position: fixed;
+    height: 50px;
+    width: 1432px;
+    background-color: white;
+    top: 0;
+    text-align: center;
+    font: sans-serif;
+    font-weight: 700px;
+    right: 7px;
+    background-color: #ec8484;
+    // background-image: url('/images/brick.png');
+    background-image: url('/images/lap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0px;
+    left: 0px;
+}
+
+.titleHead {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body {
+    // background: #b2e2d2;
+    // background-image: url('/images/brick.png');
+    background-image: url('/images/lap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+// To import custom font using google API
+// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+// Styling of the fixed title at the top
+.nav h1 {
+    // font-family: 'Bebas Neue', bold;
+    font-size: 2em;
+    position: absolute;
+    top: 7%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    background-image: linear-gradient(#000000, #000000);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: background-size .7s, background-position .5s ease-in-out;
+    font-family: sans-serif;
+}
+
+.nav h1:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+button:hover {
+    background-color: #3e5959;
+}
+
+button {
+    transition: background-color 0.5s ease;
+}
+
+input:focus {
+    outline: 2px solid #888888;
+    box-shadow: 0 0 0 2px #888888;
+  }
+
+  #card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.update,
+.complete{
+    background-color: #7429C6;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.contentBody{
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    outline-color: #000000;
+    outline-width: 2px;
+    // outline-style: solid;
+}
