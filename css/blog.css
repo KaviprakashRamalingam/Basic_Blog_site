@@ -1,0 +1,220 @@
+#blogBox {
+    margin-bottom: 2em;
+    margin-right: 45px;
+    position: sticky;
+}
+
+#blogBox input,
+#blogBox textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+/* 
+.post {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 2em;
+    width: 800px;
+} */
+.post {
+    border: 1px solid #ccc;
+    width: 982px;
+    padding: 1em;
+    margin-bottom: 2em;
+    height: 45px;                       /* Set a fixed height for the post */
+    overflow: hidden;                   /* Hide the content that exceeds the fixed height */
+    transition: height 0.5s ease;       /*Add a transition effect for the height */
+    cursor: pointer;
+    border-radius: 26px;
+    background: rgb(255, 255, 255); /* Fallback color */
+    background: rgb(155 155 155 / 89%) 
+}
+
+.post-expanded {
+    height: auto; 
+}
+
+#content{
+    width: 847px;
+    height: 130px;
+}
+
+#title{
+    height: 25px;
+    width: 342px;
+}
+
+#author{
+    height: 25px;
+}
+
+#submit{
+    width: 91px;
+    height: 29px;
+    color:#ffffff;
+    border-radius: 8px;
+    background-color: #7429C6;
+}
+
+.head{
+    /* background-color: #6f2dbd; */
+    color: #070505;
+    /* width: 414px; */
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 15px;
+    padding-left: 10px;
+    border-radius: 25px;
+}
+
+.main{
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 73px;
+    /* width: 1000px; */
+}
+
+.new{
+    padding-left: 36px;
+    padding-right: 27px;
+    padding-bottom: 76px;
+    padding-top: 76px;
+    box-sizing: border-box;
+    position: sticky;
+    top:104px;
+    background: rgb(155 155 155 / 89%);
+    border: 1px solid #e7ebf1;
+    border-radius: 30px;
+}
+
+.sec{
+    width: 1000px;
+}
+
+
+.card {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.card-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 60%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#createCard{
+    margin-left: 74px;
+    background-color: #7429C6;
+    color:#ffffff;
+    border-radius: 6px;
+    width: 83px;
+    height: 33px;
+    font-size: 15px;
+    font: Arial Bold;
+}
+
+h1{
+   font: sans-serif;
+}
+
+body{
+    margin-left: 54px;
+}
+
+.fixed {
+    position: fixed;
+    height: 75px;
+    width: 1427px;
+    background-color: white;
+    top: 0;
+    text-align: center;
+    font: sans-serif;
+    font-weight:700px;
+    right: 7px;
+    /* color:#FFFFFF; */
+    background-color:#ec8484;;
+    background-image: url('/images/brick.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* nav > h1{
+    width: 1440px;
+    height: 646px;
+} */
+
+/* nav{
+    background-image: url('images/book.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.titleHead{
+    color:rgba(255, 255, 255, 0.9);
+    /* @supports (background-clip: text) or (-webkit-background-clip: text) {
+        background-image: 
+          url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+        background-size: 110% auto;
+        background-position: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      } */
+    /* background-color: #070505; */
+}
+
+body{
+    background: #b2e2d2;
+    background-image: url('/images/brick.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.nav h1 {
+    font-family: 'Bebas Neue', bold;
+    font-size: 2em;
+    position: absolute;
+    top: 7%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    background-image: linear-gradient(#7878b5, #060606);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+.nav h1:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
