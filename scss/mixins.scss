@@ -1,0 +1,23 @@
+// _mixins.scss
+
+// Textarea of creating 
+@mixin input-textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+
+// For new blogs created
+@mixin post {
+    border: $border;
+    width: $width;
+    padding: $padding;
+    margin-bottom: $margin-bottom;
+    // height: $height;
+    max-height: $height;
+    overflow: hidden;
+    transition: max-height 1.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+    border-radius: 7px;
+    background: $background; 
+    opacity: 0.6;
+}
