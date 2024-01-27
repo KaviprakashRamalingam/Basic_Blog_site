@@ -58,6 +58,15 @@ For example:
 - Event listener is enable for click event on submit buttton
 - Picks the system date and time, formats it and passes to display in the blog
 
+## Prerequisites
+- As the node modules are excluded in the gitignore file need to run few commands
+- Clone the repository
+- Open the code in any preffered IDE
+- Run "Npm init"
+- Run "npm i sass --save-dev"
+- Now open the package.json file and under scripts add ""saas-dev": "npx sass scss/main.scss dist/blog.css""
+- Run "npm run saas-dev"
+  
 ## Steps to execute the Page
 
 - Design or fetch the JSON file with appropriate structure to load on to the webpage
