@@ -61,7 +61,7 @@ For example:
 ## Prerequisites
 - As the node modules are excluded in the gitignore file need to run few commands
 - Clone the repository
-- Open the code in any preffered IDE
+- Open the code in any preferred IDE
 - Run "Npm init"
 - Run "npm i sass --save-dev"
 - Now open the package.json file and under scripts add ""saas-dev": "npx sass scss/main.scss dist/blog.css""
